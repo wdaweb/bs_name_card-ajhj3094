@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>name-card</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      height: 100vh;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+
+    .row {
+      height: 100%;
+    }
+
+    #img {
+      background: url("./images/J.png") no-repeat center/contain;
+    }
+
+    #shadow1 {
+      width: calc(25% + 50px);
+      top: -120px;
+      right: -120px;
+    }
+
+    #shadow2 {
+      /* width: 380px; */
+      width: calc(25% + 50px);
+      bottom: -100px;
+      left: -100px;
+    }
+
+    #text {
+      height: 60%;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    #img {
+      height: 40%;
+    }
+
+    @media(min-width:1400px) {
+      #text {
+        padding-left: 150px;
+      }
+    }
+
+    @media(min-width:1200px) {
+      #text {
+        padding-left: 100px;
+      }
+
+      #img {
+        background: url("./images/J.png") no-repeat center/80%;
+      }
+    }
+
+    @media(min-width:992px) {
+      #text {
+        padding-left: 120px;
+      }
+    }
+
+    @media(min-width:768px) {
+      .row {
+        height: 75%;
+        width: 75%;
+        min-width: 800px;
+      }
+
+      #text {
+        height: 100%;
+        word-spacing: 1rem;
+        letter-spacing: .25rem;
+        white-space: nowrap;
+      }
+
+      #img {
+        height: 100%;
+      }
+    }
+
+    @media(max-width:768px) {
+      #text {
+        align-items: flex-start !important;
+        padding-left: 80px;
+        justify-content: space-between !important;
+      }
+
+      #img {
+        background: url("./images/J.png") no-repeat center/auto 80%;
+      }
+    }
+
+    @media(max-width:1400px) and (min-width:768px) {
+      :root {
+        font-size: 13px;
+      }
+
+      #text {
+        padding-left: 50px;
+      }
+    }
+
+    @media(max-width:577px) and (min-width:0px) {
+      :root {
+        font-size: 11px;
+      }
+
+      #text {
+        padding-left: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body class="d-flex justify-content-md-center align-items-md-center position-relative w-100">
+
+  <div class="row position-relative p-0 container-md g-0 shadow-lg">
+    <img id="shadow1" src="./images/shadow1.png" class="position-absolute d-none d-xl-block">
+    <img id="shadow2" src="./images/shadow2.png" class="position-absolute d-none d-xl-block">
+    <div id="img" class="col-12 col-md-4 bg-black d-flex">
+    </div>
+    <div id="text" style="min-width: 100px"
+      class="overflow-hidden pe-xl-5 col-12 col-md-8 d-flex flex-column justify-content-evenly align-items-start">
+      <div class="d-md-flex flex-md-column">
+        <h4 class="" style="font-size:1.8rem;">Front-End Designer</h4>
+        <h1 class="flex-shrink-0" style="font-size:6.5rem;">Justin Yu</h1>
+        <h4 class="" style="letter-spacing: 1.5rem;font-size:2.5rem;">泰山職訓局</h4>
+      </div>
+      <div class="fs-4 overflow-hidden d-md-flex flex-md-column" style="line-height:20px">
+        <p class="flex-shrink-0">住址：新北市泰山區貴子里致遠新村55之1號</p>
+        <p>電話：02-2901-8274</p>
+        <p>E-Mail：Justin@example.cc</p>
+        <p>網站：http://www.justin.example.cc</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
